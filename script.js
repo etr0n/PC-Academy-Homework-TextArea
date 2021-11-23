@@ -30,17 +30,13 @@ textarea.addEventListener('input', function () {
   if (sum === '') {
     textarea.rows = minRows;
     textarea.style.overflowY = 'hidden';
-    console.log('empty');
   } if (sum > min) {
     textarea.rows = maxRows;
     textarea.style.overflowY = 'hidden';
-    console.log('virsijo min rows');
   } if (sum <= min) {
     textarea.style.overflowY = 'hidden';
     textarea.rows = minRows;
-    console.log('sumazinam iki min rows');
   } if (sum > max) {
     textarea.style.overflowY = 'scroll';
-    console.log('virsijo max rows');
   }
 });
